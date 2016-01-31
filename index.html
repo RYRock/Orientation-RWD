@@ -3,11 +3,27 @@
 
 <head>
     <style type="text/css">
-    div {
-        width: 80%;
-        height: 0;
-        padding-bottom: 60%;
-        background-color: silver;
+    /* For portrait, we want the tool bar on top */
+
+    @media screen and (orientation: portrait) {
+        div {
+            width: 80%;
+            height: 0;
+            padding-bottom: 60%;
+            background-color: silver;
+            margin: auto;
+        }
+    }
+    /* For landscape, we want the tool bar stick on the left */
+
+    @media screen and (orientation: landscape) {
+        div {
+            width: 70%;
+            height: 0;
+            padding-bottom: 52.5%;
+            background-color: silver;
+            margin: auto;
+        }
     }
     </style>
 </head>
